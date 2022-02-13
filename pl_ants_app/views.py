@@ -2,7 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the pl_ants index.")
+    #return HttpResponse("Hello, world. You're at the pl_ants index.")
+    return render(request, 'home.html', context={})
 
 def base_page(request):
     context = {
